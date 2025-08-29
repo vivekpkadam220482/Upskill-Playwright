@@ -1,12 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-// test('Has title', async ({ page }) => {
-//   await page.goto('https://google.com/');
-//   await expect(page).toHaveTitle('Google');
-//   console.log("Title matched");
-//   await expect(page.getByRole('button', { name: 'Google Search' })).toBeVisible();
-// });
-
 test.only('Login test', async ({ page }) => {
   await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
   await page.locator('#username').fill('rahulshettyaasacacademy');

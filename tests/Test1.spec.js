@@ -17,6 +17,11 @@ test.only('Login test', async ({ page }) => {
   await password.fill('learning');
   await signIn.click();
 
-let outPut = await page.locator(".card-title a").first().textContent();
+// CSS Selector  
+// let outPut = await page.locator(".card-title a").first().textContent();
+
+// Xpath
+let outPut = await page.locator("//app-card[1]//h4/a").first().textContent();
+
 if (outPut == "iphone X") console.log("Test case passed");
 });

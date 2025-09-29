@@ -5,4 +5,4 @@
 /blob-report/
 /playwright/.cache/
 /node_modules/
-
+.gitignore
